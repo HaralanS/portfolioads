@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/styles/styles.css">
-  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="src/images/favicon.ico">
+  <title>Contato</title>
 </head>
 <body>
+  <!-- Nessa pagina fica o Contato, e eu procurei utilizar elementos semanticos do html ao inves de divs e outros elementos genericos 
+  No comeco do body coloquei um nav para ficar no topo com os links para as outras paginas do site -->
   <nav>
     <ul class="nav-ul-container">
       <a class="links-list" href="./index.html"><li class="nav-link">Home</li></a>
@@ -16,10 +19,10 @@
     </ul>
   </nav>
   <main>
-    
+    <!-- para o formulario usei o staticforms apenas para torna-lo funcional -->
     <form class="contact-form" action="https://api.staticforms.xyz/submit" method="post">
       <h1 style="text-align: center;" class="home-title">Contato</h1>
-      <p class="home-section-description">Ola!, Voce pode entrar em contato comigo atraves do <a style="color:rgb(8, 230, 0); font-weight: bold;" href="https://wa.me/5547999417662?text=Oi!%20Vim%20atraves%20do%20seu%20portfolio" target=”_blank”><img style="height: 16px;" src="./src/images/whatsapp-icon-color-4.png" alt=""> Whatsapp</a> ou pode me mandar um e-mail preenchendo o formulario a seguir:</p>
+      <p class="home-section-description">Ola!, Voce pode entrar em contato comigo atraves do <a style="color:rgb(8, 230, 0); font-weight: bold;" href="https://wa.me/5547999417662?text=Oi!%20Vim%20atraves%20do%20seu%20portfolio" target=”_blank”><img style="height: 16px;" src="./src/images/whatsapp-icon-color-4.png" alt="whatsapp-icon"> Whatsapp</a> ou pode me mandar um e-mail preenchendo o formulario a seguir:</p>
       <input type="text" name="name" placeholder="Your Name">
       <input type="text" name="email" placeholder="Your Email" />
       <textarea name="message"></textarea>
@@ -31,11 +34,12 @@
       <input class="form-button" type="submit" value="Submit" />
   </form>
   </main>
+  <!-- Abaixo fiz um footer com links para as redes sociais, usei ul como container e encapsulei as logos em um a(link) com os respectivos links -->
   <footer>
     <ul class="footer-ul">
-      <a href="https://github.com/HaralanS" target="_blank"><img style="height: 28px;" src="./src/images/github-icon-color-4.png" alt=""></a>
-      <a href="https://www.linkedin.com/in/haralan-santana/" target="_blank"><img style="height: 28px;" src="./src/images/linkedin-icon-color-4.png" alt=""></a>
-      <a href="https://wa.me/5547999417662?text=Oi!%20Vim%20atraves%20do%20seu%20portfolio" target="_blank"><img style="height: 28px;" src="./src/images/whatsapp-icon-color-4.png" alt=""></a>
+      <a href="https://github.com/HaralanS" target="_blank"><img style="height: 28px;" src="./src/images/github-icon-color-4.png" alt="github-icon"></a>
+      <a href="https://www.linkedin.com/in/haralan-santana/" target="_blank"><img style="height: 28px;" src="./src/images/linkedin-icon-color-4.png" alt="linkedin-icon"></a>
+      <a href="https://wa.me/5547999417662?text=Oi!%20Vim%20atraves%20do%20seu%20portfolio" target="_blank"><img style="height: 28px;" src="./src/images/whatsapp-icon-color-4.png" alt="whatsapp-icon"></a>
     </ul>
   </footer>
 </body>
